@@ -1,2 +1,2 @@
-# Kali-Security-Scripts
-bash scripts
+# VPS-Project
+By Yaron and Dvir
