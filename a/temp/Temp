@@ -1,0 +1,11 @@
+nipeapp=$(dpkg -s nipe)
+
+
+echo "Conecting to tor networks..."
+echo "Looking for nipe..."
+
+
+
+set result=
+type temp.txt| findstr /i "not" && set result=true
+if %result% == true echo Yes.
